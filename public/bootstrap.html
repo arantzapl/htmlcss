@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <body>
+        <!-- nav>ul>li*5>a[href="#"]>{Enlace $} -->
+        <nav class="navbar navbar-expand-sm bg-dark sticky-top mb-3" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Enlace 1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Enlace 2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Enlace 3</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Enlace 4</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Enlace 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container-fluid">
+            <h1 class="display-1 text-uppercase p-2 text-center rounded text-bg-dark shadow">Ejemplo de HTML</h1>
+    
+            <article class="row" id="html">
+                <h2 class="text-center text-uppercase border-bottom">HTML</h2>
+    
+                <section class="col-md-8 col-xl-4" id="parrafos">
+                    <h3 class="mb-3 text-center text-uppercase p-2 rounded bg-secondary-subtle shadow">Párrafos</h3>
+    
+                    <p><strong>Lorem ipsum</strong> dolor sit amet consectetur.</p>
+    
+                    <p><em>Lorem ipsum</em> dolor sit amet consectetur, adipisicing elit. Quod error maxime nulla. Quos
+                        sequi illum
+                        eveniet deleniti, corporis dolorem unde iste laboriosam similique aliquam odit numquam voluptate
+                        assumenda alias nemo.</p>
+    
+                    <p>
+                        <span class="text-uppercase">Lorem ipsum</span> dolor sit amet consectetur adipisicing.<br>
+                        <span class="text-uppercase">Lorem ipsum</span> dolor sit amet consectetur.<br>
+                        <span class="text-uppercase">Lorem ipsum</span> dolor sit amet consectetur, adipisicing elit.<br>
+                    </p>
+    
+                    <pre class="bg-secondary-subtle rounded shadow p-2">
+        public class HolaMundo {
+            public static void main(String[] args) {
+                System.out.println("Hola");
+            }
+        }
+                        </pre>
+                </section>
+                <section class="col-md-4 col-xl-2" id="listas">
+                    <h3 class="mb-3 text-center text-uppercase p-2 rounded bg-secondary-subtle shadow">Listas</h3>
+    
+                    <ul>
+                        <li>Unordered</li>
+                        <li>List</li>
+                    </ul>
+    
+                    <ol>
+                        <li>Ordered</li>
+                        <li>List
+                            <ol>
+                                <li>Sublista</li>
+                                <li>Ordenada</li>
+                            </ol>
+                        </li>
+                        <li>Otro elemento</li>
+                    </ol>
+    
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd class="ps-3">Hyper Text Markup Language</dd>
+    
+                        <dt>CSS</dt>
+                        <dd class="ps-3">Cascade Style Sheets</dd>
+                    </dl>
+                </section>
+                <section class="col-xl-6" id="tablas">
+                    <h3 class="mb-3 text-center text-uppercase p-2 rounded bg-secondary-subtle shadow">Tablas</h3>
+    
+                    <table class="table table-bordered table-striped table-hover shadow">
+                        <caption>Tabla de ejemplo</caption>
+                        <thead class="table-secondary">
+                            <tr>
+                                <th class="text-end">Id</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- tr*5>(th>{$})+(td>{Nombre $})+(td>{Apellido $}) -->
+                            <tr>
+                                <th class="text-end">1</th>
+                                <td>Nombre 1</td>
+                                <td>Apellido 1</td>
+                            </tr>
+                            <tr>
+                                <th class="text-end">2</th>
+                                <td>Nombre 2</td>
+                                <td>Apellido 2</td>
+                            </tr>
+                            <tr>
+                                <th class="text-end">3</th>
+                                <td>Nombre 3</td>
+                                <td>Apellido 3</td>
+                            </tr>
+                            <tr>
+                                <th class="text-end">4</th>
+                                <td>Nombre 4</td>
+                                <td>Apellido 4</td>
+                            </tr>
+                            <tr>
+                                <th class="text-end">5</th>
+                                <td>Nombre 5</td>
+                                <td>Apellido 5</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-secondary">
+                            <tr>
+                                <th class="text-end">Id</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+                <section class="col-xl-6" id="multimedia">
+                    <h3 class="mb-3 text-center text-uppercase p-2 rounded bg-secondary-subtle shadow">Multimedia</h3>
+    
+                    <div class="row">
+                        <figure class="order-lg-1 col-lg-6 figure mb-5">
+                            <img class="figure-img img-fluid rounded-3 shadow" src="imgs/marte.jpg" alt="Imágen de Marte">
+                            <figcaption class="figure-caption text-end">Marte</figcaption>
+                        </figure>
+    
+                        <audio class="w-100 order-lg-first shadow mb-5 rounded-5 bg-white" src="Audio/rock.mp3"
+                            controls></audio>
+    
+                        <video class="order-lg-3 col-12 col-lg-4 rounded-3 shadow mb-5" src="Vídeos/bigbuckbunny.mp4" controls></video>
+    
+                        <div class="order-lg-2 col-lg-6 position-relative mb-5">
+                            <iframe class="w-100 h-100 rounded-3 shadow"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.762082154642!2d-2.916172288838435!3d43.25640787788421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fb46238d865%3A0xb671edfb1120ab06!2sIpartek%20Servicios%20Inform%C3%A1ticos!5e0!3m2!1ses!2ses!4v1687943234987!5m2!1ses!2ses"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="order-lg-4 col-lg-4 position-relative ratio-1x1 mb-5">
+                            <iframe class="w-100 h-100 rounded-3 shadow"
+                                src="https://open.spotify.com/embed/artist/0Wr0oT0aCD6w7O25TPwnoX?utm_source=generator&theme=0"
+                                allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                        <div class="order-lg-5 col-lg-4 position-relative ratio-16x9 mb-5">
+                            <iframe class="w-100 h-100 rounded-3 shadow" src="https://www.youtube-nocookie.com/embed/ZTwCtQIEswM"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xl-6" id="formularios">
+                    <h3 class="mb-3 text-center text-uppercase p-2 rounded bg-secondary-subtle shadow">Formularios</h3>
+    
+                    <form class="d-flex" action="https://www.google.es/search">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Buscar en Google">
+                        <button class="btn btn-primary">Buscar</button>
+                    </form>
+    
+                    <form>
+                        <fieldset>
+                            <legend>Datos de login</legend>
+                            <div>
+                                <label class="form-label mb-2" for="email">Email</label>
+                                <input class="form-control mb-2" id="email" type="email" required
+                                    placeholder="Email que sueles utilizar">
+                            </div>
+                            <div>
+                                <label class="form-label mb-2" for="password">Contraseña</label>
+                                <input class="form-control mb-2" id="password" type="password" required
+                                    placeholder="Que tenga una cierta complejidad">
+                            </div>
+                            <div>
+                                <button class="btn btn-primary mb-2">Login</button>
+                            </div>
+                        </fieldset>
+                        <fieldset class="row">
+                            <legend>Datos principales</legend>
+    
+                            <div class="col-md-6">
+                                <input class="form-control mb-2" type="text" maxlength="20" placeholder="Nombre">
+                                <input class="form-control mb-2" type="url" placeholder="Tu página web">
+                                <input class="form-control mb-2" type="number" min="0" max="30"
+                                    placeholder="¿Cuántos hijos tienes?">
+                                <input class="form-control mb-2" type="number" step=".01" min="0"
+                                    placeholder="¿Qué presupuesto tienes?">
+                                <div class="d-flex justify-content-around">
+                                    <input class="form-check mb-2" type="checkbox">
+                                    <input class="form-check mb-2" type="radio" name="opcion" value="1">
+                                    <input class="form-check mb-2" type="radio" name="opcion" value="2">
+                                </div>
+                                <select class="form-select mb-2">
+                                    <option value="1">Uno</option>
+                                    <option value="2">Dos</option>
+                                </select>
+    
+                                <select class="form-select mb-2" multiple>
+                                    <option value="1">Uno</option>
+                                    <option value="2">Dos</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control mb-2" type="date">
+                                <input class="form-control mb-2" type="time">
+                                <input class="form-control mb-2" type="datetime-local">
+    
+                                <input class="form-control mb-2" type="tel" placeholder="Teléfono">
+                                <input class="form-control mb-2" type="color">
+                                <input class="form-range mb-2" type="range">
+    
+                                <textarea class="form-control mb-2" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </article>
+        </main>
+        <aside>
+            <nav>
+                <ul class="nav flex-column flex-sm-row text-bg-dark text-center">
+                    <li class="nav-item"><a class="text-white fw-bold nav-link" href="http://www.google.es">Google</a></li>
+                    <li class="nav-item"><a class="text-white fw-bold nav-link" href="http://www.ipartek.es">Ipartek</a>
+                    </li>
+                    <li class="nav-item"><a class="text-white fw-bold nav-link" href="https://www.freecodecamp.org">Free
+                            Code Camp</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <footer class="d-flex flex-column flex-sm-row justify-content-between text-bg-dark p-3 text-center">
+            <p>&copy;2023 Arantza Pérez</p>
+            <p>Contacto:
+                <a class="text-white fw-bold" href="email:mi@email.net">mi@email.net</a>
+                <a class="text-white fw-bold" href="tel:941231234">941231234</a>
+            </p>
+            <ul class="list-unstyled d-flex justify-content-around justify-content-sm-between" id="redes-sociales">
+                <li><a class="text-white" href="#"><i class="ms-2 bi bi-facebook"></i></a></li>
+                <li><a class="text-white" href="#"><i class="ms-2 bi bi-instagram"></i></a></li>
+                <li><a class="text-white" href="#"><i class="ms-2 bi bi-twitter"></i></a></li>
+                <li><a class="text-white" href="#"><i class="ms-2 bi bi-youtube"></i></a></li>
+                <li><a class="text-white" href="#"><i class="ms-2 bi bi-tiktok"></i></a></li>
+            </ul>
+            <p class="d-md-none position-fixed bottom-0 end-0 text-bg-dark rounded-circle py-1 px-2 fs-3 me-5 mb-5 shadow"
+            id="arriba">
+            <a href="#"><i class="bi bi-arrow-up text-white"></i></a>
+        </p>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+  </body>
+</html>
