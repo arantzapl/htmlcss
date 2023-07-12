@@ -1,0 +1,9 @@
+{
+  "productos": [
+    {
+      "nombre": "Arantza",
+      "precio": 1243,
+      "id": 1
+    }
+  ]
+}
